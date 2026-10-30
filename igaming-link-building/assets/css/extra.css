@@ -110,32 +110,103 @@
 .float-chat .tg{background:#229ED9}.float-chat .wa{background:#25D366}
 @media(max-width:600px){.prose-blog .cta-head{font-size:19px}}
 
-/* Article 3-col: TOC left, prose wide, Work with us right */
+/* Article 3-col: TOC left, prose wide, Work with us right — both rails sticky */
 .article-shell{max-width:1320px}
 @media (min-width:1024px){
   .article-grid{
     grid-template-columns:148px minmax(0,1fr) 250px !important;
     column-gap:1.75rem;
     row-gap:1.5rem;
+    align-items:start;
   }
-}
-.toc-rail{min-width:0}
-.wwu-rail{min-width:0}
+  .toc-rail,
+  .wwu-rail{
+    position:sticky;
+    top:3.25rem; /* below sticky preview-bar (~30px) + small gap */
+    align-self:start;
+    height:calc(100vh - 3.75rem);
+    max-height:calc(100vh - 3.75rem);
+    overflow:hidden;
+    z-index:20;
+  }
+  .toc-panel,
+  .wwu-panel{
+    height:100%;
+    max-height:100%;
+    display:flex;
+    flex-direction:column;
+    min-height:0;
+  }
+  /* TOC fills full sidebar height — no empty white space at bottom */
+  .toc-heading{
+    margin:0;
+    letter-spacing:.08em;
+    flex:none;
+  }
+  .toc-nav{
+    flex:1 1 auto;
+    display:flex !important;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:0;
+    margin-top:.5rem !important;
+    gap:0;
+    border-left:1px solid var(--color-line);
+  }
+  .toc-link{
+    flex:1 1 auto;
+    display:flex;
+    align-items:center;
+    padding:0 0 0 10px;
+    font-size:clamp(11.5px, 1.35vh, 13.5px);
+    line-height:1.2;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    min-height:0;
+  }
+  .toc-link:hover{color:var(--color-teal)}
 
-/* Compact sticky TOC — full list visible at ~800px viewport height */
-.toc-rail .sticky{max-height:calc(100vh - 5rem);overflow:visible}
-.toc-heading{margin:0 0 2px;letter-spacing:.08em}
-.toc-nav{gap:0}
-.toc-link{
-  display:block;
-  padding:3px 0 3px 10px;
-  font-size:12px;
-  line-height:1.25;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  /* Compact WWU so it fits viewport and stays pinned */
+  .wwu-panel{
+    overflow:hidden;
+    gap:10px;
+  }
+  .wwu{
+    flex:none;
+    box-shadow:0 8px 24px #1f4e5f14;
+  }
+  .wwu-h{padding:12px 14px 10px}
+  .wwu-h .t{font-size:14px}
+  .wwu-h .s{font-size:11.5px;margin-top:2px}
+  .wwu-b{padding:10px 12px 12px}
+  .wwu-b label{margin:0 0 2px;font-size:11px}
+  .wwu-b input,
+  .wwu-b textarea{
+    padding:7px 9px;
+    margin-bottom:7px;
+    font-size:13px;
+  }
+  .wwu-b textarea{min-height:52px;resize:none}
+  .wwu-b button{padding:9px;font-size:13px}
+  .wwu-trust{
+    margin-top:0 !important;
+    padding:10px 12px !important;
+    font-size:12px !important;
+  }
+  .wwu-trust li{margin:4px 0}
+  .wwu-rail .mt-4{margin-top:.65rem !important}
+  .wwu-rail .text-\[13px\]{font-size:12px}
 }
-.toc-link:hover{color:var(--color-teal)}
-@media (min-width:1024px) and (max-height:900px){
-  .toc-link{padding:2px 0 2px 10px;font-size:11.5px;line-height:1.2}
+
+/* Mobile: no sticky rails, natural flow */
+@media (max-width:1023px){
+  .toc-rail{display:none !important}
+  .wwu-rail{position:static;height:auto;max-height:none;overflow:visible}
+  .wwu-panel{display:block;height:auto}
+  .toc-link{
+    display:block;
+    padding:6px 0 6px 10px;
+    font-size:13px;
+  }
 }
