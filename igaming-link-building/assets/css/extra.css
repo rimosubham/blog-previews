@@ -110,8 +110,20 @@
 .float-chat .tg{background:#229ED9}.float-chat .wa{background:#25D366}
 @media(max-width:600px){.prose-blog .cta-head{font-size:19px}}
 
-/* Compact sticky TOC — fit all entries without scroll at ~800px viewport */
-.toc-rail .sticky{max-height:calc(100vh - 5.5rem);overflow:visible}
+/* Article 3-col: TOC left, prose wide, Work with us right */
+.article-shell{max-width:1320px}
+@media (min-width:1024px){
+  .article-grid{
+    grid-template-columns:148px minmax(0,1fr) 250px !important;
+    column-gap:1.75rem;
+    row-gap:1.5rem;
+  }
+}
+.toc-rail{min-width:0}
+.wwu-rail{min-width:0}
+
+/* Compact sticky TOC — full list visible at ~800px viewport height */
+.toc-rail .sticky{max-height:calc(100vh - 5rem);overflow:visible}
 .toc-heading{margin:0 0 2px;letter-spacing:.08em}
 .toc-nav{gap:0}
 .toc-link{
@@ -127,4 +139,3 @@
 @media (min-width:1024px) and (max-height:900px){
   .toc-link{padding:2px 0 2px 10px;font-size:11.5px;line-height:1.2}
 }
-.wwu-rail .sticky{max-height:calc(100vh - 5rem)}
