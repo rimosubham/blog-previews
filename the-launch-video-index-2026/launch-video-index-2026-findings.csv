@@ -1,0 +1,25 @@
+finding_id,dimension,bucket,n_launches,metric,value,unit,source_note
+L1,video_length,<30s,88,1M_hit_rate,22,percent,"Directory cut 1,172 launches; 736 with measured duration (Atomik/LaunchVideo.com analysis Oct 29 2026)"
+L2,video_length,30-60s,203,1M_hit_rate,13,percent,same
+L3,video_length,60-90s,173,1M_hit_rate,28,percent,same
+L4,video_length,90-120s,134,1M_hit_rate,25,percent,same
+L5,video_length,2-3min,92,1M_hit_rate,29,percent,same
+L6,video_length,3min+,46,1M_hit_rate,28,percent,same
+L7,video_length,60s+,445,1M_hit_rate,27,percent,same
+L8,video_length,under_60s,,1M_hit_rate,16,percent,same
+H1,hook_score,5/5,,1M_hit_rate,45-49,percent,"Hook/editing/copy scores ~rho 0.31-0.33"
+D1,distribution_score,5/5,103,1M_hit_rate,80,percent,"Strongest predictor rho=0.68; n=1,021 rated"
+D2,distribution_score,1/5,177,1M_hit_rate,2,percent,same
+T1,launch_day,Tuesday,,median_views,272000,views,same directory cut
+T2,launch_day,Wednesday,,median_views,284000,views,same
+T3,launch_day,Weekend,,median_views,35000,views,same
+F1,format,Cinematic,,1M_hit_rate,28,percent,groups with 15+ launches
+F2,format,Founder-led,,1M_hit_rate,25,percent,same
+F3,format,Demo,,1M_hit_rate,24,percent,same
+F4,format,Explainer,,1M_hit_rate,22,percent,same
+F5,format,AI-generated,,1M_hit_rate,19,percent,same
+C1,category,Hardware,,1M_hit_rate,36,percent,same
+C2,category,AI_ML,,1M_hit_rate,25,percent,same
+C3,category,SaaS,,1M_hit_rate,17,percent,same
+V1,directory,all,1172,median_views,236686,views,Mar 30-Oct 27 2026 cut
+V2,directory,all,1172,pct_above_1M,23.6,percent,same
