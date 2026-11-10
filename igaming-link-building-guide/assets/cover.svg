@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="iGaming link building guide cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#163a47"/>
+      <stop offset="55%" stop-color="#1f4e5f"/>
+      <stop offset="100%" stop-color="#2aa3b4"/>
+    </linearGradient>
+    <linearGradient id="link" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9fe3ec"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="120" r="180" fill="#2aa3b4" opacity=".18"/>
+  <circle cx="160" cy="520" r="220" fill="#0d171c" opacity=".25"/>
+  <!-- chain links -->
+  <g transform="translate(420,210)" fill="none" stroke="url(#link)" stroke-width="18" stroke-linecap="round">
+    <rect x="0" y="40" width="140" height="90" rx="45" transform="rotate(-25 70 85)"/>
+    <rect x="110" y="10" width="140" height="90" rx="45" transform="rotate(25 180 55)"/>
+  </g>
+  <text x="80" y="100" fill="#9fe3ec" font-family="Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="3">IGAMING PUBLISHERS</text>
+  <text x="80" y="520" fill="#ffffff" font-family="Helvetica Neue, Arial, sans-serif" font-size="48" font-weight="700">iGaming Link Building</text>
+  <text x="80" y="575" fill="#cfe0e4" font-family="Helvetica Neue, Arial, sans-serif" font-size="26">The Complete 2027 Guide</text>
+</svg>
