@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How AI engines shortlist B2B SaaS tools: a citation study across ChatGPT, Perplexity, Gemini and AI Overviews</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="A sourced meta-analysis of AI search visibility for SaaS: who ChatGPT, Perplexity, Gemini and Google AI Overviews cite, from which sources, and how consistently across engines.">
+<meta name="author" content="Subham Paul">
+<link rel="canonical" href="https://rimosubham.github.io/blog-previews/how-ai-engines-shortlist-b2b-saas-tools/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;650;700;750;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<meta property="og:title" content="How AI engines shortlist B2B SaaS tools">
+<meta property="og:description" content="A citation study across ChatGPT, Perplexity, Gemini and AI Overviews. Only seven of the fifty most-mentioned sources are shared across engines.">
+<meta property="og:type" content="article">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"How AI engines shortlist B2B SaaS tools: a citation study across ChatGPT, Perplexity, Gemini and AI Overviews","description":"A sourced meta-analysis of AI search visibility for SaaS: who ChatGPT, Perplexity, Gemini and Google AI Overviews cite, from which sources, and how consistently across engines.","datePublished":"2026-11-13","dateModified":"2026-11-13","author":{"@type":"Person","name":"Subham Paul"},"publisher":{"@type":"Organization","name":"Epic Slope Partners","url":"https://www.epicslope.partners/"},"mainEntityOfPage":"https://rimosubham.github.io/blog-previews/how-ai-engines-shortlist-b2b-saas-tools/","keywords":"AI search visibility SaaS, GEO, ChatGPT citations, Perplexity, Gemini, AI Overviews"}
+</script>
+<style>
+:root{--color-main:#0353F0;--color-main-light:#a8d1ff;--color-main-dark:#0240c0;--color-secondary:#223c52;--color-text:#223c52;--color-grey:#f5f8fa;--color-white:#fff;--muted:#53697b;--blue-wash:#eaf2ff;--green:#18745f;--green-wash:#e9f5ef;--orange:#99520d;--orange-wash:#fff2df;--purple:#6a4da5;--line:#dfe7ed;--shadow-natural:0 10px 35px rgba(34,60,82,.07)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{font-family:'Montserrat',Arial,sans-serif;font-size:16px;line-height:1.7;color:var(--color-text);background:var(--color-white)}
+a{color:var(--color-main);text-underline-offset:4px}
+a:hover{color:var(--color-main-dark)}
+button{font:inherit;cursor:pointer}
+:focus-visible{outline:3px solid #bf701a;outline-offset:5px}
+h1,h2,h3,h4{line-height:1.22;text-wrap:balance}
+h1{font-size:clamp(2.3rem,5.1vw,4.5rem);font-weight:800;letter-spacing:-.055em}
+h2{font-size:clamp(1.7rem,3.1vw,2.6rem);font-weight:750;letter-spacing:-.035em}
+h3{font-size:1.2rem;letter-spacing:-.02em;font-weight:700}
+p+p{margin-top:18px}
+strong{font-weight:700}
+code,.mono{font-family:'JetBrains Mono',monospace;font-size:.84em;overflow-wrap:anywhere}
+.container{max-width:1160px;margin:0 auto}
+.skip{position:fixed;top:10px;left:10px;padding:10px 20px;background:#fff;z-index:200;transform:translateY(-200%)}
+.skip:focus{transform:translateY(0)}
+.eyebrow{font-size:.73rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.small,.caption{font-size:.82rem;color:var(--muted);line-height:1.6}
+.caption{margin-top:18px}
+.hero{background:radial-gradient(ellipse at 85% 90%,#315d79 0,transparent 52%),linear-gradient(120deg,var(--color-secondary),#152d41);color:#fff;padding:34px 36px 64px;position:relative}
+.hero-top{display:flex;justify-content:space-between;gap:24px;align-items:center;margin-bottom:48px}
+.brand{display:flex;align-items:center;gap:13px;font-size:.92rem;font-weight:650;color:#fff;text-decoration:none}
+.brand img{height:28px;width:auto;padding:6px 8px;background:#fff;border-radius:10px}
+.hero-date{font-size:.78rem;color:#d1dfeb;text-align:right}
+.hero h1{margin:18px 0 24px}
+.highlight{color:var(--color-main-light)}
+.hero-lead{font-size:1.14rem;color:#e0eaf3;line-height:1.8;max-width:46rem}
+.hero-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:30px}
+.read-link{color:#d7eaff;font-size:.85rem}
+.hero-kicker{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#a8c7df;font-weight:700}
+.sticky{position:sticky;top:0;z-index:50;padding:12px 28px;background:rgba(255,255,255,.97);box-shadow:0 4px 25px rgba(34,60,82,.09)}
+.sticky-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;max-width:1160px;margin:0 auto}
+.sticky .brand{color:var(--color-secondary);white-space:nowrap;font-size:.85rem}
+.sticky .brand img{padding:0;background:transparent;border-radius:0;height:22px}
+.nav-links{display:flex;gap:18px;flex-wrap:wrap}
+.nav-links a{font-size:.72rem;font-weight:600;color:var(--muted);text-decoration:none}
+.nav-links a:hover,.nav-links a[aria-current]{color:var(--color-main)}
+.mobile-toc{display:none;font-size:.76rem;background:none;border:1px solid var(--line);padding:7px 12px;border-radius:7px;color:var(--color-secondary)}
+.section{padding:76px 36px;scroll-margin-top:12px}
+main>.section:nth-child(even){background:var(--color-grey)}
+.intro{background:var(--color-grey);padding:48px 36px 55px}
+.intro-text{font-size:1.08rem;max-width:46rem}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;margin:35px 0}
+.stat{display:flex;align-items:center;gap:15px}
+.stat b{font-size:clamp(2.1rem,3.4vw,3.1rem);line-height:1;font-weight:750;color:var(--color-main);letter-spacing:-.05em;font-variant-numeric:tabular-nums}
+.stat span{font-size:.82rem;line-height:1.5}
+.toc{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 20px;margin-top:22px}
+.toc a{display:flex;gap:10px;align-items:baseline;color:var(--color-secondary);font-size:.77rem;font-weight:600;text-decoration:none;padding:8px 0}
+.toc a:hover{text-decoration:underline}
+.toc span{color:var(--color-main);font-family:'JetBrains Mono',monospace;font-size:.7rem;flex:0 0 auto}
+.section-heading{display:flex;gap:20px;align-items:center;margin-bottom:24px}
+.section-number{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;flex:0 0 42px;background:var(--color-main);border-radius:50%;color:#fff;font-size:.82rem;font-weight:700}
+.section-intro{font-size:1.04rem;margin-bottom:30px;max-width:48rem}
+.two-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;align-items:start}
+.three-cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.panel{background:#fff;padding:28px;border-radius:15px;box-shadow:var(--shadow-natural);min-width:0}
+.panel h3{margin-bottom:14px}
+.panel p{font-size:.93rem}
+.panel.blue{background:var(--blue-wash);box-shadow:none}
+.panel.green{background:var(--green-wash);box-shadow:none}
+.panel.orange{background:var(--orange-wash);box-shadow:none}
+.panel.dark{background:var(--color-secondary);color:#fff;box-shadow:none}
+.panel.dark .small,.panel.dark .caption,.panel.dark a{color:#d1e0ec}
+.panel.dark a{color:#a8d1ff}
+.section-note{margin-top:28px;background:var(--blue-wash);padding:23px 27px;border-radius:12px;font-size:.93rem}
+.section-note.orange{background:var(--orange-wash)}
+.section-note.green{background:var(--green-wash)}
+.callout{margin:28px 0;padding:24px 28px;border-left:4px solid var(--color-main);background:var(--blue-wash);border-radius:0 12px 12px 0}
+.callout p{font-size:.98rem}
+.callout .who{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--color-main);margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:.9rem;background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--shadow-natural)}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700;background:var(--color-grey)}
+tr:last-child td{border-bottom:none}
+.table-wrap{overflow-x:auto;margin:28px 0;border-radius:12px}
+.chart-panel{background:#fff;padding:30px;border-radius:15px;margin:28px 0;box-shadow:var(--shadow-natural)}
+.chart-top{display:flex;justify-content:space-between;gap:20px;align-items:baseline;margin-bottom:22px}
+.chart-top p{font-size:.79rem;color:var(--muted);max-width:28rem}
+.bars{display:flex;flex-direction:column;gap:14px}
+.bar-row{display:grid;grid-template-columns:160px 1fr 64px;gap:12px;align-items:center}
+.bar-row span{font-size:.8rem}
+.bar-row b{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--color-main);text-align:right}
+.bar-track{height:18px;background:#e8eef4;border-radius:6px;overflow:hidden}
+.bar-fill{height:100%;background:var(--color-main);border-radius:6px;width:var(--w)}
+.bar-fill.alt{background:#7aa2e8}
+.bar-fill.red{background:#c45c3e}
+.bar-fill.green{background:var(--green)}
+.bar-fill.orange{background:#d4923a}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 24px}
+.filters button{border:1px solid #cbd7e3;background:#fff;color:var(--color-secondary);border-radius:8px;padding:9px 14px;font-size:.82rem;font-weight:600}
+.filters button[aria-pressed=true]{background:var(--color-main);border-color:var(--color-main);color:#fff}
+.engine-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.engine-card{background:#fff;padding:26px;border-radius:14px;box-shadow:var(--shadow-natural);min-height:220px}
+.engine-card h3{margin:6px 0 12px}
+.engine-card .tag{display:inline-block;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:4px 9px;border-radius:99px;background:var(--blue-wash);color:var(--color-main)}
+.engine-card ul{margin:12px 0 0 18px;font-size:.9rem}
+.engine-card li{margin:5px 0}
+.engine-card[hidden]{display:none}
+.glossary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 28px;margin-top:22px}
+.glossary dt{font-weight:700;font-size:.95rem;margin-top:4px}
+.glossary dd{font-size:.9rem;color:var(--muted);margin:4px 0 10px}
+.serp{background:var(--color-grey);padding:28px;border-radius:18px;margin:28px 0}
+.serp-head{background:#fff;padding:16px 20px;border-radius:10px;display:flex;align-items:baseline;gap:18px;margin-bottom:18px;box-shadow:var(--shadow-natural)}
+.serp-head span{font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.serp-head b{font-size:1.25rem;letter-spacing:-.03em}
+.cite{background:#fff;padding:16px 18px;border-radius:10px;margin:8px 0;font-size:.88rem}
+.cite small{display:block;color:var(--muted);font-size:.74rem;margin-top:4px}
+.cite .lab{font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--color-main)}
+.takeaway-list{counter-reset:tk;list-style:none;margin:20px 0}
+.takeaway-list li{position:relative;padding:18px 18px 18px 70px;margin:12px 0;background:#fff;border-radius:12px;box-shadow:var(--shadow-natural);font-size:.95rem}
+.takeaway-list li::before{counter-increment:tk;content:counter(tk, decimal-leading-zero);position:absolute;left:18px;top:18px;font-family:'JetBrains Mono',monospace;font-size:.85rem;font-weight:700;color:var(--color-main)}
+.inventory td:first-child{font-weight:600;white-space:nowrap}
+.footer{background:var(--color-secondary);color:#d1e0ec;padding:48px 36px 64px;font-size:.88rem}
+.footer a{color:#a8d1ff}
+.footer-inner{max-width:1160px;margin:0 auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+.src{font-size:.82rem}
+.venn{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:28px 0}
+.venn .panel{text-align:center;padding:32px 18px}
+.venn b{display:block;font-size:3rem;line-height:1;color:var(--color-main);letter-spacing:-.05em;margin:8px 0 10px}
+.pill{display:inline-block;font-size:.72rem;font-weight:700;padding:3px 8px;border-radius:6px;background:var(--blue-wash);color:var(--color-main);margin-right:6px}
+.method-list{margin:16px 0 16px 22px}
+.method-list li{margin:8px 0}
+.hidden-filter{display:none}
+@media (max-width:980px){
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .toc,.glossary,.two-cols,.engine-grid,.venn{grid-template-columns:1fr}
+  .three-cols{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .mobile-toc{display:inline-block}
+  .hero,.section,.intro,.footer{padding-left:22px;padding-right:22px}
+  .bar-row{grid-template-columns:110px 1fr 54px}
+  h1{font-size:2.2rem}
+}
+@media print{
+  .sticky,.skip,.filters,.mobile-toc{display:none!important}
+  .hero{background:#223c52;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  a{color:inherit}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#article">Skip to the article</a>
+<header class="hero">
+  <div class="container">
+    <div class="hero-top">
+      <a class="brand" href="https://www.epicslope.partners/">
+        <img src="epicslope-logo.svg" width="100" height="34" alt="Epic Slope Partners">
+        Epic Slope Partners
+      </a>
+      <div class="hero-date">
+        <div>A research preview · 13 November 2026</div>
+        <div>By Subham Paul</div>
+      </div>
+    </div>
+    <p class="hero-kicker">AI search visibility · SaaS</p>
+    <h1>How AI engines shortlist <span class="highlight">B2B SaaS tools</span></h1>
+    <p class="hero-lead">A citation study across ChatGPT, Perplexity, Gemini and Google AI Overviews: who gets named, which sources the engines lean on, and how rarely those shortlists agree. This is a meta-analysis of published research, not a fabricated prompt run.</p>
+    <div class="hero-footer">
+      <p class="read-link">Primary keyword: AI search visibility SaaS · About a 30-minute read</p>
+      <a class="read-link" href="#method">Sources and method ↓</a>
+    </div>
+  </div>
+</header>
+<nav class="sticky" aria-label="Table of contents">
+  <div class="sticky-inner">
+    <a class="brand" href="https://www.epicslope.partners/"><img src="epicslope-logo.svg" width="80" height="27" alt=""> Epic Slope Partners</a>
+    <div class="nav-links">
+      <a href="#shared">01 Shared sources</a>
+      <a href="#engines">02 Each engine</a>
+      <a href="#example">03 Worked example</a>
+      <a href="#sources-map">04 Citation map</a>
+      <a href="#consistency">05 Consistency</a>
+      <a href="#rankings">06 Rankings</a>
+      <a href="#saas">07 Two SaaS cases</a>
+      <a href="#takeaways">08 Takeaways</a>
+    </div>
+    <button class="mobile-toc" type="button" aria-expanded="false" aria-controls="intro-toc">On this page</button>
+  </div>
+</nav>
+<main id="article">
+<section class="intro" id="intro">
+  <div class="container">
+    <p class="intro-text">In June 2025, Patrick Stox at Ahrefs compared the 50 most-mentioned sources in ChatGPT, Perplexity and Google AI Overviews. The dataset covered about 76.7 million AI Overviews, 957,000 ChatGPT prompts and 953,500 Perplexity prompts in a single month. Only seven websites appeared in all three top-50 lists. Eighty-six percent of those leading sources were not shared.</p>
+    <p class="intro-text" style="margin-top:18px">For a B2B SaaS company, that split is no longer a curiosity about “AI SEO.” 6sense’s 2025 Buyer Experience Report, written up in November 2025 from nearly 4,000 buyers, found that 94% of B2B buyers now use a large language model during a purchase — up from the 89% Forrester recorded in mid-2024, the same step-up Vibin Babuurajan cited in a <a href="https://www.medianews4u.com/geo-evolves-from-seo-tactics-to-long-term-brand-building-and-consumer-trust-vibin-babuurajan-epic-slope-partners/">November 2026 interview</a>. Those buyers are not asking the model to replace a vendor conversation. They are using it, 6sense found, mainly in the middle of the journey: to compare, synthesise and assemble a shortlist.</p>
+    <div class="stats" aria-label="Headline figures">
+      <div class="stat"><b data-count="7">7</b><span>of the top 50 mentioned sources sit on ChatGPT, Perplexity and AI Overviews together<br><i class="small">Ahrefs, June 2025</i></span></div>
+      <div class="stat"><b>12%</b><span>of ChatGPT, Gemini and Copilot citations also rank in Google’s top 10 for the same prompt<br><i class="small">Ahrefs, August 2025</i></span></div>
+      <div class="stat"><b>&lt;1%</b><span>of repeat prompts return the same brand list twice<br><i class="small">SparkToro, Nov–Dec 2025</i></span></div>
+      <div class="stat"><b>94%</b><span>of B2B buyers use an LLM on the way to a purchase<br><i class="small">6sense, 2025</i></span></div>
+    </div>
+    <p class="intro-text">This page does not invent a four-engine prompt run. ChatGPT, Gemini and Perplexity’s public answers required a signed-in session on 13 November 2026, and Google’s AI Overview did not return through an automated fetch. The study is a meta-analysis: it puts published citation research — Ahrefs, Semrush, Profound, SparkToro, Seer Interactive and 6sense — next to itself, dates every figure, and flags where methods disagree. Epic Slope’s published client results for Composio and ZEPIC are quoted as the firm reported them, not as findings of this study.</p>
+    <h3 style="margin-top:36px;margin-bottom:8px">On this page</h3>
+    <nav class="toc" id="intro-toc">
+      <a href="#glossary"><span>00</span> A short glossary</a>
+      <a href="#shared"><span>01</span> Only seven sources are shared</a>
+      <a href="#engines"><span>02</span> Each engine has its own system</a>
+      <a href="#example"><span>03</span> A worked, dated example</a>
+      <a href="#sources-map"><span>04</span> Who gets cited, from where</a>
+      <a href="#consistency"><span>05</span> Consistency is the signal</a>
+      <a href="#rankings"><span>06</span> Rankings help, less than they did</a>
+      <a href="#saas"><span>07</span> Two SaaS companies that moved the number</a>
+      <a href="#takeaways"><span>08</span> Takeaways</a>
+      <a href="#method"><span>09</span> Sources and method</a>
+      <a href="#appendix"><span>10</span> The inventory</a>
+    </nav>
+  </div>
+</section>
+<section class="section" id="glossary">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">00</span>
+      <h2>A short glossary, before the lists</h2>
+    </div>
+    <p class="section-intro">The studies below use the same everyday words for slightly different things. The distinctions matter once you start comparing percentages.</p>
+    <dl class="glossary">
+      <div>
+        <dt>Citation</dt>
+        <dd>A visible source link or named reference inside an AI answer. Profound and Semrush count citation events; Ahrefs Brand Radar also tracks mention share, which is not the same cut.</dd>
+      </div>
+      <div>
+        <dt>Mention, or brand mention</dt>
+        <dd>The brand is named in the answer, whether or not a URL is attached. SparkToro’s visibility percentage is a mention measure: how often a brand appears across many runs of a prompt.</dd>
+      </div>
+      <div>
+        <dt>Shortlist</dt>
+        <dd>The two, three or five tools an engine names when a buyer asks for “the best” in a category. 6sense’s buyers already knew most of the vendors they evaluated; the model is often confirming a set, not inventing one.</dd>
+      </div>
+      <div>
+        <dt>AI search visibility, for SaaS</dt>
+        <dd>How consistently a product is named or cited when a buying-intent prompt is run across engines and over repeat runs — not a single screenshot, and not a “ranking position” in the chat.</dd>
+      </div>
+      <div>
+        <dt>GEO, or generative engine optimisation</dt>
+        <dd>The practice of earning those mentions and citations. Epic Slope’s FAQ puts it as work that starts out looking like SEO and eventually becomes brand building, the same line Vibin used in the MediaNews4U interview.</dd>
+      </div>
+      <div>
+        <dt>AI Overviews and AI Mode</dt>
+        <dd>Google’s generated answers on a search results page (Overviews) and the more conversational, sidebar-heavy AI Mode. Semrush’s July 2025 study treats them as related but not identical systems. They are not ChatGPT.</dd>
+      </div>
+      <div>
+        <dt>Chat assistants: ChatGPT, Perplexity, Gemini, Copilot</dt>
+        <dd>Answer engines that retrieve, generate, and — when browsing is on — cite. Default ChatGPT, as Ahrefs noted, may not cite at all. Gemini appears in several Ahrefs datasets but has fewer public source-share tables than the other three.</dd>
+      </div>
+      <div>
+        <dt>Owned, earned, community, review, reference</dt>
+        <dd>A rough taxonomy of citation sources used on this page: the vendor’s own site; editorial and news; Reddit, Quora, YouTube comments; G2, Capterra, Gartner; and Wikipedia or similar references.</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="shared">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">01</span>
+      <h2>Only seven sources sit on every engine’s shortlist</h2>
+    </div>
+    <p class="section-intro">The surprising number is not that Wikipedia is cited a lot. It is that the lists of leading sources barely overlap.</p>
+    <p>Stox’s June 2025 note is short and blunt. Of the 50 most-mentioned websites in Ahrefs Brand Radar for AI Overviews, ChatGPT and Perplexity, only seven were in the top 50 for all three. That is 14% shared, 86% not. The accompanying essay, “The 10 most mentioned domains,” uses the same June 2025 window and puts the combined volume at about 78.6 million searches.</p>
+    <div class="venn">
+      <div class="panel">
+        <span class="eyebrow">Shared by all three</span>
+        <b>7</b>
+        <p class="small">Websites in the top 50 mentioned sources for ChatGPT, Perplexity and AI Overviews. Ahrefs did not publish the seven names as a text list in that article; we do not invent them here.</p>
+      </div>
+      <div class="panel blue">
+        <span class="eyebrow">Not shared</span>
+        <b>86%</b>
+        <p class="small">Of those leading sources. Each engine has its own bias: licensed publishers, Google-owned properties, or a more international crawl.</p>
+      </div>
+      <div class="panel green">
+        <span class="eyebrow">The June 2025 window</span>
+        <b>78.6M</b>
+        <p class="small">About 76.7 million AI Overviews, 957,000 ChatGPT prompts and 953,500 Perplexity prompts, in one month.</p>
+      </div>
+    </div>
+    <p>Stox also set out, in a small table, how the systems choose a citation in the first place. The table is worth keeping in view for the rest of this page, because later percentage fights are often fights about this mechanism, not about who “wins SEO.”</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Platform</th><th>How Ahrefs described its citation path, June 2025</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Perplexity</td><td>Real-time web search, then a rank, a quote, and a citation of the best-matching source.</td></tr>
+          <tr><td>ChatGPT, with browsing</td><td>Search, then a filter for trusted or licensed domains, then a citation.</td></tr>
+          <tr><td>ChatGPT, default</td><td>No citations unless they are pre-built; it may invent a source.</td></tr>
+          <tr><td>Google AI Overviews</td><td>Drawn from the search index, as a curated citation list.</td></tr>
+          <tr><td>Bing Copilot</td><td>Uses Bing search, highlights snippets, and includes citations.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="caption">Source: Patrick Stox, “86% of top mentioned sources are not shared across ChatGPT, Perplexity, and AI Overviews,” Ahrefs, 12 June 2025. Gemini is not in that three-way overlap study; it appears in Ahrefs’ later overlap and freshness work.</p>
+    <p>The biases he recorded still explain a lot of what other firms measured later. AI Overviews, he wrote, lean toward the authoritative sites already familiar from search — health, finance, encyclopedic knowledge, social media — and toward Google-owned properties, with media, non-Google entertainment and ecommerce notably thinner. ChatGPT leans on publishers and non-Google media, and has licensing deals with many of the sites it cites; it is thin on health. Perplexity pulls from a broader international corpus, with local and regional brands that never made the other two top-50 lists, and with less of the usual Western media and social web.</p>
+    <div class="callout">
+      <p class="who">Vibin Babuurajan, November 2026</p>
+      <p>Vibin used a simple mental model in that MediaNews4U interview: SEO asks whether you can rank a page; AI search asks whether the wider information ecosystem considers you a credible answer. The Ahrefs overlap is the same idea in a Venn diagram. A page-one ranking on Google is one ecosystem. It is not, by itself, the ecosystem ChatGPT or Perplexity will consult.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="engines">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">02</span>
+      <h2>Each engine has its own set of habits</h2>
+    </div>
+    <p class="section-intro">Web pages, AI answers, videos and review sites do not travel through one machine. Filter the cards for a single engine, or leave them on “all four.”</p>
+    <div class="filters" role="toolbar" aria-label="Filter engines">
+      <button type="button" data-filter="all" aria-pressed="true">All four</button>
+      <button type="button" data-filter="chatgpt" aria-pressed="false">ChatGPT</button>
+      <button type="button" data-filter="perplexity" aria-pressed="false">Perplexity</button>
+      <button type="button" data-filter="gemini" aria-pressed="false">Gemini</button>
+      <button type="button" data-filter="aio" aria-pressed="false">AI Overviews</button>
+    </div>
+    <div class="engine-grid" id="engine-grid">
+      <article class="engine-card" data-engine="chatgpt">
+        <span class="tag">ChatGPT</span>
+        <h3>Licensed publishers, then a long tail</h3>
+        <p>Profound, across 680 million citations from August 2024 to June 2025 (updated August 2025), put Wikipedia at 7.8% of ChatGPT’s total citations, well ahead of Reddit at 1.8%, then Forbes and G2 at 1.1% each. Among ChatGPT’s own top ten sources, Wikipedia alone was 47.9% of that top-ten share. Ahrefs, on a June 2025 mention-share cut, put Wikipedia higher still, at 16.3%.</p>
+        <ul>
+          <li>Freshness: the strongest preference in Ahrefs’ July 2025 study of 17 million citations. ChatGPT in-text citations averaged 958 days since publication, against 1,416 for organic SERPs.</li>
+          <li>Google overlap: about 8% of in-text citation URLs also sat in Google’s top 10 for the same prompt (Ahrefs, August 2025, 15,000 prompts).</li>
+          <li>Volatility: Semrush watched ChatGPT’s Reddit share fall from close to 60% of prompt responses in early August 2025 to around 10% by mid-September, and Wikipedia from about 55% to under 20% — and both remained ChatGPT’s two most-cited domains after the drop.</li>
+        </ul>
+      </article>
+      <article class="engine-card" data-engine="perplexity">
+        <span class="tag">Perplexity</span>
+        <h3>Live search, closer to the SERP, heavy on Reddit</h3>
+        <p>Profound’s overall cut for the same August 2024–June 2025 window put Reddit at 6.6% of Perplexity citations, YouTube at 2.0%, Gartner at 1.0%, and G2 at 0.6%. Among Perplexity’s top ten, Reddit was 46.7% of that share. Ahrefs’ June 2025 mention-share figure for Wikipedia on Perplexity was 12.5%.</p>
+        <ul>
+          <li>It is the assistant that aligns closest with Google in Ahrefs’ URL-level study: 28.6% of cited URLs were also in Google’s top 10, against about 8% for the other assistants.</li>
+          <li>Semrush’s July 2025 AI Mode study, using a domain-level cut rather than URLs, found a much higher 91% domain overlap and 82% URL overlap with Google’s top 10. The two figures are not interchangeable; they are both reported in the appendix.</li>
+          <li>Its top sources in Semrush’s later three-month study (230,000 prompts, more than 100 million citations, into October 2025) included Reddit, LinkedIn, NIH, Microsoft and Google.</li>
+        </ul>
+      </article>
+      <article class="engine-card" data-engine="gemini">
+        <span class="tag">Gemini</span>
+        <h3>Present in the datasets, thinner in the source tables</h3>
+        <p>Gemini is in Ahrefs’ August 2025 overlap study and the July 2025 freshness study, and it is one of the five platforms in Epic Slope’s published ZEPIC results. Public, dated source-share tables as detailed as Profound’s ChatGPT–Perplexity–Overviews cuts were not in the studies we reviewed. That is a gap, not a zero.</p>
+        <ul>
+          <li>Overlap with Google’s top 10, for Gemini as for Copilot, sits in the “hovering around 8%” group Ahrefs described; the paper does not print a standalone Gemini percentage in the text we captured.</li>
+          <li>Freshness: Gemini citations averaged 1,118 days since publication and 831 days since the last update — newer than organic results (1,416 and 1,047 days), less aggressive than ChatGPT.</li>
+          <li>ZEPIC, on Ahrefs Brand Radar from February 2025 to March 2026, was cited four times in Gemini, against 26 times in ChatGPT and ten in AI Overviews. That is one product’s record, not a category law.</li>
+        </ul>
+      </article>
+      <article class="engine-card" data-engine="aio">
+        <span class="tag">Google AI Overviews</span>
+        <h3>From the index, then a widening gap with page one</h3>
+        <p>Profound put Reddit at 2.2% of AI Overview citations, YouTube at 1.9%, Quora at 1.5% and LinkedIn at 1.3%, with Wikipedia only 0.6% — a very different shape from ChatGPT. Ahrefs’ June 2025 mention share still had Wikipedia first on Overviews, at 8.4%, with Reddit and Quora high only there (7.4% and 3.6%). YouTube, Ahrefs later wrote, became the most-cited domain in Overviews and grew 34% over six months.</p>
+        <ul>
+          <li>In July 2025 Ahrefs found 76% of Overview citation URLs also sat in Google’s top 10. By the 2 March 2026 update, on 863,000 keyword SERPs and 4 million Overview URLs, that figure was 37.9% in the article's prose. The table in the same piece prints a slightly different split — 37.10% in the top 10, 26.20% in positions 11–100, and 36.70% outside the top 100 — and we do not choose between them.</li>
+          <li>Of the citations that did not rank in the top 100, 18.2% were YouTube URLs, or 5.6% of all Overview URLs in that dataset.</li>
+          <li>Semrush, on more than 10 million keywords, saw Overviews trigger on 6.49% of queries in January 2025, peak at 24.61% in July, and settle at 15.69% in November. Commercial intent’s share of those queries rose from 8.15% to 18.57% by October. Computers &amp; electronics, a neighbour of SaaS, had Overviews on 17.92% of keywords in November, second only to science.</li>
+        </ul>
+      </article>
+    </div>
+    <p class="caption" style="margin-top:22px">Profound’s percentages are shares of all citations in a long-tail distribution, so even a “leading” source is often in the low single digits. Ahrefs’ mention-share figures are a different cut, on a different month. Both are dated in the appendix. Semrush’s AI Mode, which is not the same product as AI Overviews, cited an average of seven unique domains per query, against three for Overviews, and put Reddit, YouTube and Facebook in 68% or more of the answers that carried extra links.</p>
+  </div>
+</section>
+<section class="section" id="example">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">03</span>
+      <h2>A worked example: a mid-market CRM prompt, and a SaaS cloud shortlist</h2>
+    </div>
+    <p class="section-intro">Resoneo’s ranking-signals essay walks through a real search, “[knee pain when running],” captured on a dated day, in two countries. We tried the equivalent for a buying-intent SaaS prompt. The live four-engine capture did not come back. The published record for this kind of prompt is still specific, and it is dated.</p>
+    <div class="serp">
+      <div class="serp-head">
+        <span>Buying-intent prompt · attempted 13 November 2026, 04:50–05:00 IST</span>
+        <b>What are the best CRM tools for mid-market B2B SaaS companies?</b>
+      </div>
+      <p class="small" style="margin-bottom:16px">We fetched Google Search for the US and Perplexity’s public search URL through Firecrawl. Google’s automated response did not include an AI Overview. Perplexity returned a signed-out shell — “Sign up and repeat your request” — and no shortlist. ChatGPT and Gemini, on the public web, also required a session. No vendor names from that attempt are reported here, because none were collected.</p>
+      <div class="two-cols">
+        <div class="cite">
+          <span class="lab">What 6sense says this prompt is for</span>
+          <p>In the 2025 Buyer Experience Report, buyers used LLMs mainly in the middle of the journey, not at the start or the close. Eighty-five percent already had direct prior experience with the vendors they evaluated. Example queries 6sense itself lists include “What are the key differences between Salesforce and HubSpot for mid-market B2B companies?” and “Create a comparison table of marketing automation platforms.” A CRM shortlist prompt sits in that band: comparison and synthesis, before a sales call, not instead of one.</p>
+          <small>6sense / Dan Hieb, 24 November 2025, from nearly 4,000 buyers. Median purchase $300,000–$400,000. Average buying group 10.1 people. Vendors evaluated: 5.1, of which 3.9 were already known.</small>
+        </div>
+        <div class="cite">
+          <span class="lab">What Seer says Google will often wrap around it</span>
+          <p>Seer Interactive’s April 2026 AIO CTR update, on 5.47 million tracked queries and 2.43 billion organic impressions, found that comparison queries triggered an AI Overview 95% of the time, and question-format queries 86% of the time. A prompt of this shape, if it is also typed into Google, is in the highest-exposure band of that study. Being cited inside that Overview, Seer found, delivered 120% more organic clicks per impression than sitting on the same SERP uncited — and still 38% fewer clicks than a query with no Overview at all.</p>
+          <small>Seer Interactive, “AIO Impact on Google CTR: 2026 Update,” 24 April 2026. Data from January 2025 to February 2026, 53 brands. Informational math per 1 million impressions: no AIO ≈ 33,500 clicks; brand cited ≈ 20,743; AIO present, not cited ≈ 9,445.</small>
+        </div>
+      </div>
+    </div>
+    <h3 style="margin:28px 0 12px">The closest dated SaaS shortlist we can actually cite</h3>
+    <p>Rand Fishkin and Patrick O’Donnell at SparkToro and Gumshoe, in research published in January 2026, asked 600 volunteers to run 12 prompts through ChatGPT, Claude and Google’s AI Overview (or AI Mode if an Overview did not show), a combined 2,961 times, over November and December 2025. One of those topic spaces was cloud-computing providers for SaaS startups.</p>
+    <p>They did not print a ranked “top five clouds” as a single canonical list — and that is the finding. Even in a tight category, with relatively few plausible vendors and a higher pairwise correlation than a sprawling topic such as new science-fiction novels, the tools almost never returned the same list in the same order: fewer than one time in 1,000, “no matter the question,” including “SaaS Cloud Computing Providers.” Across the whole experiment, an identical brand list appeared fewer than once in 100 runs. Visibility percentage across many runs, Fishkin concluded, is a reasonable metric. A “ranking position in AI” is not.</p>
+    <div class="three-cols" style="margin-top:28px">
+      <div class="panel">
+        <h3>&lt;1 in 100</h3>
+        <p>Same brand list, twice, on the same prompt. SparkToro, 2,961 runs, Nov–Dec 2025.</p>
+      </div>
+      <div class="panel">
+        <h3>&lt;1 in 1,000</h3>
+        <p>Same list in the same order, even in tight spaces such as SaaS cloud providers or LA Volvo dealers.</p>
+      </div>
+      <div class="panel">
+        <h3>55–77%</h3>
+        <p>Visibility for Bose, Sony, Sennheiser and Apple across 994 headphone-prompt responses — a ceiling that leading brands in tighter spaces also approached, while a more open category (brand-design agencies) sat in the 30–40% band.</p>
+      </div>
+    </div>
+    <div class="callout">
+      <p class="who">The same idea, from the other side of the table</p>
+      <p>Vibin used a client story in the November 2026 interview: the CEO of an enterprise security company came close to losing a deal because a buyer searched the category in AI search and did not see them, while several competitors appeared. They closed it another way. He also used a blunt frequency example: the same question, asked by two people, can produce different answers, and a brand might be mentioned in 20 searches out of 100. “Ideally, you want that number to be as close to 100% as possible, but there’s no guarantee.” SparkToro’s &lt;1-in-100 identical lists is the measurement behind that sentence.</p>
+    </div>
+    <p class="caption">SparkToro publication: January 2026 (article assets dated January 2026; fieldwork November–December 2025). Claude was in SparkToro’s three-tool set; Gemini and Perplexity were not. We do not back-fill those two engines with invented SaaS-cloud names.</p>
+  </div>
+</section>
+
+<section class="section" id="sources-map">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">04</span>
+      <h2>Who gets cited, and from which sources</h2>
+    </div>
+    <p class="section-intro">A SaaS shortlist is only half a citation study. The other half is the page the engine points at: Wikipedia, a Reddit thread, a G2 category, a YouTube transcript, a LinkedIn post, or the vendor’s own domain.</p>
+    <div class="chart-panel">
+      <div class="chart-top">
+        <h3>Leading citation sources, Profound, August 2024 – June 2025</h3>
+        <p>Share of all citations in Profound’s 680 million-citation dataset, updated August 2025. These are not mention-share figures, and they are not SaaS-only.</p>
+      </div>
+      <p class="small" style="margin-bottom:12px"><strong>ChatGPT.</strong> Wikipedia 7.8%, Reddit 1.8%, Forbes 1.1%, G2 1.1%, TechRadar 0.9%.</p>
+      <div class="bars" style="margin-bottom:28px">
+        <div class="bar-row"><span>Wikipedia</span><div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div><b>7.8%</b></div>
+        <div class="bar-row"><span>Reddit</span><div class="bar-track"><div class="bar-fill alt" style="--w:23%"></div></div><b>1.8%</b></div>
+        <div class="bar-row"><span>Forbes</span><div class="bar-track"><div class="bar-fill alt" style="--w:14%"></div></div><b>1.1%</b></div>
+        <div class="bar-row"><span>G2</span><div class="bar-track"><div class="bar-fill green" style="--w:14%"></div></div><b>1.1%</b></div>
+        <div class="bar-row"><span>TechRadar</span><div class="bar-track"><div class="bar-fill alt" style="--w:12%"></div></div><b>0.9%</b></div>
+      </div>
+      <p class="small" style="margin-bottom:12px"><strong>Perplexity.</strong> Reddit 6.6%, YouTube 2.0%, Gartner 1.0%, Yelp 0.8%, LinkedIn 0.8%, G2 0.6%.</p>
+      <div class="bars" style="margin-bottom:28px">
+        <div class="bar-row"><span>Reddit</span><div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div><b>6.6%</b></div>
+        <div class="bar-row"><span>YouTube</span><div class="bar-track"><div class="bar-fill orange" style="--w:30%"></div></div><b>2.0%</b></div>
+        <div class="bar-row"><span>Gartner</span><div class="bar-track"><div class="bar-fill alt" style="--w:15%"></div></div><b>1.0%</b></div>
+        <div class="bar-row"><span>Yelp</span><div class="bar-track"><div class="bar-fill alt" style="--w:12%"></div></div><b>0.8%</b></div>
+        <div class="bar-row"><span>LinkedIn</span><div class="bar-track"><div class="bar-fill alt" style="--w:12%"></div></div><b>0.8%</b></div>
+        <div class="bar-row"><span>G2</span><div class="bar-track"><div class="bar-fill green" style="--w:9%"></div></div><b>0.6%</b></div>
+      </div>
+      <p class="small" style="margin-bottom:12px"><strong>Google AI Overviews.</strong> Reddit 2.2%, YouTube 1.9%, Quora 1.5%, LinkedIn 1.3%, Gartner 0.7%, Wikipedia 0.6%.</p>
+      <div class="bars">
+        <div class="bar-row"><span>Reddit</span><div class="bar-track"><div class="bar-fill" style="--w:100%"></div></div><b>2.2%</b></div>
+        <div class="bar-row"><span>YouTube</span><div class="bar-track"><div class="bar-fill orange" style="--w:86%"></div></div><b>1.9%</b></div>
+        <div class="bar-row"><span>Quora</span><div class="bar-track"><div class="bar-fill alt" style="--w:68%"></div></div><b>1.5%</b></div>
+        <div class="bar-row"><span>LinkedIn</span><div class="bar-track"><div class="bar-fill alt" style="--w:59%"></div></div><b>1.3%</b></div>
+        <div class="bar-row"><span>Gartner</span><div class="bar-track"><div class="bar-fill alt" style="--w:32%"></div></div><b>0.7%</b></div>
+        <div class="bar-row"><span>Wikipedia</span><div class="bar-track"><div class="bar-fill alt" style="--w:27%"></div></div><b>0.6%</b></div>
+      </div>
+    </div>
+    <p>Two things in those bars should matter to a SaaS company more than the precise decimal. First, G2 already appears as a measurable ChatGPT and Perplexity source in a general web crawl — 1.1% and 0.6% of all citations, in a dataset where almost every other software vendor’s own domain would be a rounding error. Gartner shows up on Perplexity and on Overviews. The review layer is not a side channel. Second, the community and video layer — Reddit, YouTube, Quora, LinkedIn — is not optional on Overviews or Perplexity, and it is not stable.</p>
+    <p>Luke Harsel’s Semrush study, published 10 November 2025, watched that instability in public. Over three months, on 230,000 prompts and more than 100 million citations across ChatGPT search, Google AI Mode and Perplexity, ChatGPT’s Reddit and Wikipedia citations collapsed in mid-September 2025 and then restabilised at a lower, more balanced ratio. Reddit and Wikipedia were still ChatGPT’s two most-cited domains in October. LinkedIn and Forbes rose on the same timeline. The drop was not mirrored on AI Mode or Perplexity. Citations, Semrush’s title slide might as well have said, are not a setting you configure once.</p>
+    <div class="section-note">
+      <strong>What Vibin used to tell companies to do with this map.</strong> In the same interview he used a four-point list: make the content findable by AI agents; write around the categories you want to be associated with; build visibility beyond the website, through third-party publications; and be present on the channels the engines actually cite — “whether that’s Reddit, YouTube, LinkedIn, or third-party review platforms like G2 and Capterra.” That list is almost a caption for the Profound bars. He also used a warning that sits with the review-site numbers: if a financial-planning product’s site talks about simplicity and Reddit or G2 says the opposite, “there’s very little room to fake it.”
+    </div>
+    <h3 style="margin:36px 0 14px">Ahrefs’ June 2025 mention share, the other cut</h3>
+    <p>On Brand Radar’s mention-share measure, Wikipedia still dominated all three of ChatGPT (16.3%), Perplexity (12.5%) and AI Overviews (8.4%). Reddit and Quora, Stox wrote, “rank high only in AI Overviews (7.4% and 3.6%). They don’t crack the top-10 in ChatGPT or Perplexity.” That last sentence is from June 2025. Semrush’s August–September ChatGPT figures, and Profound’s year-long ChatGPT Reddit share of 1.8%, show a different window and a different ChatGPT. The honest way to read them together is not to pick a favourite percentage. It is to treat source share as dated and engine-specific, and to re-measure.</p>
+  </div>
+</section>
+
+<section class="section" id="consistency">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">05</span>
+      <h2>Consistency is the signal, not a single mention</h2>
+    </div>
+    <p class="section-intro">If an engine almost never returns the same shortlist twice, a screenshot is a poor KPI. The studies converge on a different one: how often the brand appears, across prompts, engines and independent sources.</p>
+    <p>Fishkin’s January 2026 conclusions are the cleanest statement of that. The tools are probability engines, “designed to generate unique answers every time.” Users almost never craft similar prompts even when they share an intent, so the wild variation is likely higher than his controlled experiment showed. With enough prompts, run enough times, a visibility percentage becomes a dartboard you can actually read. A tool that sells a ranking position in the answer, he wrote, is “full of baloney.”</p>
+    <p>Vibin used the same test, in different words, when he was asked how you know a citation reflects quality rather than a quirk of training data. A single citation, he said, could be a quirk. “The stronger signal is consistency. If a company keeps showing up across different AI engines, different prompts, and multiple independent sources — whether that’s comparison sites, reviews, communities, or industry publications — you’re seeing something much closer to genuine authority.” The question he used was not “Did ChatGPT mention us?” It was: “Are we consistently being mentioned and cited when our category is discussed, across different questions, engines, and independent sources?”</p>
+    <div class="two-cols" style="margin-top:28px">
+      <div class="panel dark">
+        <h3>What to measure</h3>
+        <p>Visibility percentage across a fixed prompt set, re-run on a schedule, on each engine separately — ChatGPT, Perplexity, Gemini, AI Overviews — and across the set. Report the range, not a point. Note the date and the model.</p>
+      </div>
+      <div class="panel">
+        <h3>What not to treat as a rank</h3>
+        <p>The order of names in one answer. SparkToro found the same ordered list fewer than once in 1,000 runs, even in tight SaaS-cloud space. Semrush showed that a source’s share can move tens of points in a month without a corresponding change on another engine.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="rankings">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">06</span>
+      <h2>Rankings still help, less than they did, and more at the domain than the URL</h2>
+    </div>
+    <p class="section-intro">A page-one ranking is neither necessary nor sufficient for a citation. It is also not irrelevant — especially at the domain level, and especially for Google’s own AI surfaces, which have been loosening their grip on the top 10.</p>
+    <div class="chart-panel">
+      <div class="chart-top">
+        <h3>Share of AI-cited URLs that also rank in Google’s top 10</h3>
+        <p>Ahrefs Brand Radar. The Overview figures are a time series; the assistant figures are from the 15,000-prompt study of 11 August 2025.</p>
+      </div>
+      <div class="bars">
+        <div class="bar-row"><span>AI Overviews, ~July 2025</span><div class="bar-track"><div class="bar-fill" style="--w:76%"></div></div><b>76%</b></div>
+        <div class="bar-row"><span>AI Overviews, March 2026</span><div class="bar-track"><div class="bar-fill alt" style="--w:38%"></div></div><b>37.9%</b></div>
+        <div class="bar-row"><span>Perplexity URLs, Aug 2025</span><div class="bar-track"><div class="bar-fill green" style="--w:28.6%"></div></div><b>28.6%</b></div>
+        <div class="bar-row"><span>ChatGPT, Gemini, Copilot</span><div class="bar-track"><div class="bar-fill orange" style="--w:8%"></div></div><b>~8%</b></div>
+        <div class="bar-row"><span>Those three, plus Perplexity, average</span><div class="bar-track"><div class="bar-fill alt" style="--w:12%"></div></div><b>12%</b></div>
+      </div>
+      <p class="caption">The March 2026 Overview update used 863,000 keyword SERPs and 4 million Overview URLs, more than double the earlier analysis. The same article's prose and its table disagree on how the remaining Overview citations split between positions 11–100 and beyond the top 100, so those remainder percentages are not used as headline figures here. Eighty percent of the assistant citations in the August study, Ahrefs wrote, did not rank in Google at all for the original prompt.</p>
+    </div>
+    <p>Semrush, in its 21 July 2025 AI Mode study, reported much higher overlap at the <em>domain</em> level: about 86% domain and 67% URL overlap for AI Overviews with Google’s top 10, and more than 91% domain and 82% URL overlap for Perplexity. Those are not a rebuttal of Ahrefs’ 12% and 28.6%. They are a different grain (domain versus URL), a different period, and a different sample. Semrush’s own later comment is the useful one: domains that accumulate many top-10 rankings are far more likely to be cited, even when the cited URL is not the page-one URL. In a related Semrush study, most of ChatGPT’s citations in that sample came from URLs ranking at position 21 or beyond.</p>
+    <div class="two-cols" style="margin-top:8px">
+      <div class="panel">
+        <h3>YouTube mentions, 0.737</h3>
+        <p>Louise Linehan’s 12 December 2025 Ahrefs study of 75,000 brands (domains with DR above 40 and a head keyword of at least 800 monthly searches) found that YouTube mentions — a brand name in a video title, transcript or description — had the strongest correlation with AI visibility, about 0.737, ahead of YouTube mention impressions at about 0.717 and branded web mentions at 0.66–0.71. The pattern held on ChatGPT as well as on Google’s own surfaces. OpenAI’s GPT-4, the New York Times had reported in 2024, was trained on more than a million hours of YouTube transcriptions. Correlation is not causation; Ahrefs said so plainly.</p>
+      </div>
+      <div class="panel">
+        <h3>Domain rating, 0.266, on ChatGPT</h3>
+        <p>The same study found ChatGPT correlated only weakly with classic authority metrics: branded search volume at 0.352 and domain rating at 0.266. The number of site pages correlated at about 0.194 — “almost no relationship,” in Linehan’s words. Ryan Law’s line, quoted there, was that this is “not just a content creation arms race.” AI Mode, by contrast, showed the highest correlations with branded anchors (0.628) and branded search volume (0.466). The three assistants largely mentioned the same brands, with an output-overlap correlation of 0.779 — which is about brands, not about the URLs they cite.</p>
+      </div>
+    </div>
+    <p style="margin-top:28px">Freshness cuts the same way, and not evenly. Ryan Law’s 28 July 2025 study of 16.975 million cited URLs found AI-cited pages 25.7% “fresher” than organic results on publication age (1,064 days versus 1,432), and 13.1% fresher on last update. ChatGPT had the strongest preference for new publication; Google AI Overviews, at 1,432 days, looked almost like the organic SERP, and in the table were slightly older than it. Perplexity appeared to order its citations from newer to older. A SaaS changelog, a comparison page that still says “2024,” and a G2 profile last refreshed this quarter are not equivalent inputs.</p>
+  </div>
+</section>
+
+<section class="section" id="saas">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">07</span>
+      <h2>Two SaaS companies that moved the number</h2>
+    </div>
+    <p class="section-intro">The figures in this section are Epic Slope’s published case results, attributed to the firm’s own case studies. They are not measurements we ran for this meta-analysis. They are here because they show what “consistency across engines” looked like for two B2B products once the work was treated as one programme.</p>
+    <div class="two-cols">
+      <div class="panel">
+        <span class="eyebrow">Composio · December 2025 – June 2026</span>
+        <h3>From fewer than 10 citations to about 180</h3>
+        <p><a href="https://www.epicslope.partners/case-studies/composio">Composio</a> is a developer-first integration platform. Over a six-month engagement covering SEO, GEO, programmatic SEO and link building, Epic Slope reported that tracked AI citations grew from fewer than 10 to roughly 180 across major LLM platforms — about 18 times — with “447.1K total AI citations and 240 average cited pages over the period.” Visibility across core bottom-of-funnel themes rose from under 7% to 24%.</p>
+        <p>Organic clicks, in the same write-up, went from 250,000 to 754,000 against the previous six months; impressions from 12.4 million to 55.9 million; average position from 9.2 to 7.2. Domain rating moved from 64 to 74. Clicks on commercial searches went from 1,800 to 3,940, with average position from 16.7 to 7.9, and conversions from organic search roughly tripled. The GEO work, the case study says, focused on making content easier for AI systems to understand and cite, “with a focus on the bottom-of-funnel topics that shape tool shortlists.”</p>
+        <p class="small">Source: Epic Slope Partners, “How We Turned Composio’s Organic &amp; AI Search Into a Lead-Gen Engine,” attributed to work with Sunil Kumar Dash, Content and Growth, Composio. The “447.1K total AI citations” line is quoted as published; it sits beside the “roughly 180” tracked-citation figure and should be read as a separate Brand Radar-style total, not as 180 × something we were not given.</p>
+      </div>
+      <div class="panel">
+        <span class="eyebrow">ZEPIC · 12 months, citations compared February 2025 – March 2026</span>
+        <h3>42 citations, split across five platforms</h3>
+        <p><a href="https://www.epicslope.partners/case-studies/zepic">ZEPIC</a> is a marketing OS. In 12 months, Epic Slope reported, domain rating grew from 20 to 55, organic traffic increased more than ten times, 11 keywords reached the top three, and ZEPIC was cited 42 times across five AI platforms. Ahrefs Brand Radar, comparing February 2025 with March 2026, showed that split as 26 citations in ChatGPT, 10 in Google AI Overviews, 4 in Gemini, “along with references in Perplexity and Copilot.” Monthly traffic value, the case study says, grew to $178 from less than $10 at the start.</p>
+        <p>The work described is the same shape as the source map in section 04: placements in product ecosystems and on high-DR editorial domains; pages across the journey, including comparisons and alternatives; and pages reformatted with direct answers and clear definitions “so that both search engines and AI systems” could reuse them. Referring domains expanded more than six-fold.</p>
+        <p class="small">Source: Epic Slope Partners, “How ZEPIC Built AI Visibility &amp; 10x Organic Traffic,” attributed to work with Sreelesh Pillai, co-CEO at ZEPIC. The 26 + 10 + 4 already sum to 40; the remaining two sit in the Perplexity and Copilot remainder as published, without a further split.</p>
+      </div>
+    </div>
+    <div class="callout">
+      <p class="who">How the founders used to describe the same work</p>
+      <p>When Vinayak Ravi, Vibin Babuurajan and Gautham Ramakrishnan started Epic Slope Partners in January 2024, Vibin later said, they used that first year to do the work themselves — selling, managing clients, wearing every hat. The three, he said in a LinkedIn post, used to sit on the client side of SaaS companies; the firm’s own site presents that experience as more than 42 years of cumulative demand generation, “from $0 to $400M,” with logos for Freshworks, IBM, CleverTap, Zoho, Adpushup, Locad, Turing and Sprinklr. A MediaNews4U interviewer put the span as IBM, Freshworks, Zoho, Sprinklr and CleverTap. We do not assign those employers to one founder except where a public source is specific: Vibin used to work in growth at Freshworks, and he later used “learnings from my time at Freshworks and Turing” in a LinkedIn post of his own. Gautham’s public profile centres on paid-media ROI across Google, LinkedIn and Meta; Deepakshi Dawar, then head of marketing at Xflow, wrote that Gautham and Vinayak used a data-backed plan on organic growth. Vibin used to describe GEO as work that “starts by looking like SEO, but eventually… starts looking a lot more like brand building.” The YouTube and branded-mention correlations in section 06 are what that sentence looks like as a coefficient.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="takeaways">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">08</span>
+      <h2>Takeaways, for a SaaS team that has to choose what to do on Monday</h2>
+    </div>
+    <ol class="takeaway-list">
+      <li><strong>Measure visibility percentage, on a fixed prompt set, across engines, and date it.</strong> SparkToro’s experiment is the reason. A single ChatGPT screenshot is an anecdote. A “position in the answer” is not a metric the tools themselves support. Re-run the same buying-intent prompts on ChatGPT, Perplexity, Gemini and AI Overviews, often enough to get a percentage, and keep the model and the week in the spreadsheet.</li>
+      <li><strong>Do not assume a Google top-10 URL will be the cited URL, especially outside Google’s own surfaces.</strong> Ahrefs’ 12% average for ChatGPT, Gemini and Copilot, and the fall in Overview-to-top-10 overlap from 76% to 37.9%, are the current published record. Domain-level authority, Semrush found, still travels; the exact URL often does not.</li>
+      <li><strong>Build for the sources each engine actually cites, not for a generic “AI list.”</strong> ChatGPT, in Profound’s year-long cut, leaned on Wikipedia, then Reddit, Forbes and G2. Perplexity leaned on Reddit, YouTube and Gartner. Overviews leaned on Reddit, YouTube, Quora and LinkedIn. Eighty-six percent of leading sources are not shared. A Reddit-only plan and a Wikipedia-only plan each miss two engines.</li>
+      <li><strong>Treat G2, Gartner, Capterra, Reddit, YouTube and LinkedIn as part of the product’s public evidence, not as a comms afterthought.</strong> That is both the citation data and the line Vibin used. It is also the honesty constraint he used: a site that claims simplicity will not get the citation it wants if G2 and Reddit say otherwise.</li>
+      <li><strong>Prefer brand mentions, YouTube mentions and third-party agreement over a raw increase in page count.</strong> Ahrefs’ 75,000-brand study found almost no relationship between the number of site pages and AI visibility, and only a weak ChatGPT correlation with domain rating. YouTube mentions and branded web mentions were the strong correlates. Programmatic SEO can still expand the index of citable URLs — Composio’s case study credits it for impression growth — but it is not, on this evidence, a substitute for being talked about.</li>
+      <li><strong>Re-measure after every engine change.</strong> Semrush watched ChatGPT’s Reddit share fall from about 60% of responses to about 10% in a few weeks of September 2025, without a matching collapse on Perplexity or AI Mode. Source maps expire.</li>
+      <li><strong>On Google, a citation is the better of two bad CTRs, and comparison queries are the exposed ones.</strong> Seer’s 2026 update: +120% clicks versus uncited on the same Overview SERP, still −38% versus a query with no Overview; comparison queries trigger an Overview 95% of the time. SaaS “alternatives” and “versus” pages live in that 95%.</li>
+      <li><strong>GEO, on this evidence, does start as SEO and become brand building.</strong> That is the sentence Vibin used. The studies above are what it rests on: retrieval systems that look past page one, source lists that privilege third-party evidence, and a consistency test no single article can pass on its own.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="method">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">09</span>
+      <h2>Sources and method</h2>
+    </div>
+    <p class="section-intro">This is a meta-analysis. It does not contain a new, complete four-engine prompt panel run by us. Every quantitative claim is attributed to a published study, a dated interview, or an Epic Slope case study, and is collected in the inventory below.</p>
+    <h3>What we did</h3>
+    <ul class="method-list">
+      <li>On 12–13 November 2026 we scraped the primary studies with Firecrawl, and read them in full rather than from secondary round-ups. Where a later update superseded an earlier figure (Ahrefs’ Overview-to-top-10 overlap; Semrush’s refreshed Overviews study), we report both and date both.</li>
+      <li>We attempted a live capture of the prompt “What are the best CRM tools for mid-market B2B SaaS companies?” on 13 November 2026. Google Search, fetched automatically for <code>hl=en&amp;gl=us</code>, did not return an AI Overview in that fetch. Perplexity’s public search URL returned a signed-out gate. ChatGPT and Gemini were not available unsigned. We report that failure and do not invent a shortlist.</li>
+      <li>Founder background is limited to facts we could source: Epic Slope’s FAQ and homepage, Vibin’s 2 November 2026 MediaNews4U interview, his LinkedIn posts, a YouTube episode description and LinkedIn commentary naming him as an ex-Freshworks growth leader, Gautham’s public LinkedIn headline, and a named Xflow testimonial. We do not assign IBM, Zoho, Sprinklr or CleverTap to a single founder. We did not obtain a full signed-out scrape of the three LinkedIn profile pages, so we do not quote education or role histories from those pages.</li>
+      <li>Epic Slope’s Composio and ZEPIC figures are quoted from the firm’s published case studies and labelled as such. Client numbers that do not appear there are not used.</li>
+    </ul>
+    <h3 style="margin-top:28px">What we did not do</h3>
+    <ul class="method-list">
+      <li>We did not use DataForSEO, or any paid rank-tracking panel, for this page.</li>
+      <li>We did not merge incompatible percentages (Ahrefs URL overlap, Semrush domain overlap, Profound total-citation share, Ahrefs mention share) into a single “true” share. Where they disagree, both appear, with their grain and their dates.</li>
+      <li>We did not have a Gemini-specific top-source table of the same depth as Profound’s ChatGPT, Perplexity and Overviews cuts, and we say so.</li>
+      <li>We did not transcribe names from chart images where the surrounding article did not also print them as text — including the seven websites that sit in all three Ahrefs top-50 lists.</li>
+    </ul>
+    <div class="section-note orange" style="margin-top:28px">
+      <strong>A note on conflicting overlap figures.</strong> Ahrefs, August 2025: 28.6% of Perplexity citation <em>URLs</em> were in Google’s top 10, and about 8% for ChatGPT, Gemini and Copilot, averaging 12%. Semrush, July 2025: Perplexity had more than 91% <em>domain</em> overlap and 82% URL overlap with Google’s top 10; AI Overviews about 86% domain and 67% URL. These can both be right in their own samples. They should not be averaged.
+    </div>
+  </div>
+</section>
+<section class="section" id="appendix">
+  <div class="container">
+    <div class="section-heading">
+      <span class="section-number">10</span>
+      <h2>The inventory: every study this page rests on</h2>
+    </div>
+    <p class="section-intro">A full list of the primary sources, with sample, date and the finding we used. Secondary mentions (Search Engine Journal write-ups, vendor blogs that only repeated these numbers) are omitted unless we needed them for a date.</p>
+    <div class="table-wrap">
+      <table class="inventory">
+        <thead>
+          <tr><th>Study</th><th>Date</th><th>Sample</th><th>Finding used on this page</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://ahrefs.com/blog/top-mentioned-sources-are-not-shared-across-ai-assistants/">Ahrefs, Stox — 86% of top sources not shared</a></td>
+            <td>12 June 2025</td>
+            <td>~76.7M AI Overviews, 957k ChatGPT prompts, 953.5k Perplexity prompts, June 2025</td>
+            <td>Only 7 of the top 50 mentioned sources are shared across all three engines (14% shared, 86% not). Citation-path table for each platform. Bias notes for Overviews, ChatGPT and Perplexity.</td>
+          </tr>
+          <tr>
+            <td><a href="https://ahrefs.com/blog/top-10-most-cited-domains-ai-assistants/">Ahrefs, Stox — 10 most mentioned domains</a></td>
+            <td>11 June 2025</td>
+            <td>Same June 2025 window, cited as ~78.6M searches</td>
+            <td>Wikipedia mention share: ChatGPT 16.3%, Perplexity 12.5%, AI Overviews 8.4%. Reddit and Quora high only on Overviews (7.4% and 3.6%).</td>
+          </tr>
+          <tr>
+            <td><a href="https://ahrefs.com/blog/ai-search-overlap/">Ahrefs, Linehan / Guan — 12% overlap</a></td>
+            <td>11 August 2025</td>
+            <td>15,000 prompts</td>
+            <td>On average 12% of ChatGPT, Gemini and Copilot citation URLs sit in Google’s top 10. Perplexity 28.6%. ChatGPT in-text 8.0%, ChatGPT references 6.1%. About 80% of those assistant citations do not rank in Google for the original prompt. Earlier Overview figure of 76% from the linked July 2025 study.</td>
+          </tr>
+          <tr>
+            <td><a href="https://ahrefs.com/blog/ai-overview-citations-top-10/">Ahrefs, Linehan / Guan — 38% Overview update</a></td>
+            <td>2 March 2026</td>
+            <td>863k keyword SERPs, 4M AI Overview URLs</td>
+            <td>37.9% of Overview citation URLs also appear in the first 10 blocks in the article prose, down from ~76% (the table in the same article prints 37.10% / 26.20% / 36.70% for top 10, 11–100, and beyond). Of citations that did not rank in the top 100, 18.2% are YouTube (5.6% of all Overview URLs). YouTube described as the most-cited Overview domain, +34% in six months.</td>
+          </tr>
+          <tr>
+            <td><a href="https://ahrefs.com/blog/do-ai-assistants-prefer-to-cite-fresh-content/">Ahrefs, Law / Guan — freshness, 17M citations</a></td>
+            <td>28 July 2025</td>
+            <td>16.975M cited URLs from Brand Radar, across ChatGPT, Perplexity, Gemini, Copilot, AI Overviews and organic SERPs</td>
+            <td>AI-cited URLs 25.7% fresher on publication age (1,064 vs 1,432 days) and 13.1% fresher on last update. ChatGPT the strongest preference for new publication; Overviews close to (and in the table slightly older than) organic. Gemini 1,118 days since publication, 831 since update. Perplexity appears to order citations newer to older.</td>
+          </tr>
+          <tr>
+            <td><a href="https://ahrefs.com/blog/ai-brand-visibility-correlations/">Ahrefs, Linehan / Guan — 75k brands</a></td>
+            <td>12 December 2025</td>
+            <td>75,000 brands, DR &gt; 40, head keyword volume ≥ 800; Spearman correlations</td>
+            <td>YouTube mentions ~0.737, YouTube impressions ~0.717, branded web mentions 0.66–0.71. ChatGPT: branded search 0.352, DR 0.266, site pages ~0.194. AI Mode: branded anchors 0.628, branded search 0.466. Brand-output overlap across assistants 0.779. Explicitly: correlation is not causation.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.tryprofound.com/blog/ai-platform-citation-patterns">Profound, Lafferty — citation patterns</a></td>
+            <td>5 June 2025, updated August 2025</td>
+            <td>680M citations, August 2024–June 2025; top-10 share tables also labelled on 10M citations</td>
+            <td>ChatGPT: Wikipedia 7.8%, Reddit 1.8%, Forbes 1.1%, G2 1.1%. Perplexity: Reddit 6.6%, YouTube 2.0%, Gartner 1.0%, G2 0.6%. Overviews: Reddit 2.2%, YouTube 1.9%, Quora 1.5%, LinkedIn 1.3%, Wikipedia 0.6%. Top-10 internal shares (Wikipedia 47.9% of ChatGPT’s top 10; Reddit 46.7% of Perplexity’s). TLD: .com 80.41% of ChatGPT citations, .org 11.29%.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.semrush.com/blog/most-cited-domains-ai/">Semrush, Harsel — most-cited domains, 3 months</a></td>
+            <td>10 November 2025</td>
+            <td>230k prompts, &gt;100M citations, ChatGPT search, Google AI Mode, Perplexity; weekly top 25 domains</td>
+            <td>ChatGPT Reddit share from ~60% of responses in early August 2025 to ~10% by mid-September; Wikipedia from ~55% to &lt;20%. Both remained ChatGPT’s top two. The drop was not matched on AI Mode or Perplexity. LinkedIn and Forbes rose. AI Mode’s top set included LinkedIn, YouTube, Reddit, Google and Google Blog; Wikipedia in around 2% of AI Mode responses. Perplexity’s top set: Reddit, LinkedIn, NIH, Microsoft, Google.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.semrush.com/blog/ai-mode-comparison-study/">Semrush, Levin — AI Mode comparison</a></td>
+            <td>21 July 2025</td>
+            <td>&gt;150,000 unique citations; ChatGPT, Perplexity, AI Overviews, AI Mode vs Google top 10</td>
+            <td>AI Mode: 92% of responses had a sidebar of ~7 unique domains (51% domain / 32% URL overlap with Google’s top 10); 7% had links below the response (89% domain / 80% URL). Perplexity: &gt;91% domain, 82% URL overlap. Overviews: ~86% domain, 67% URL. ChatGPT the weakest Google overlap. Overviews average three unique domains, AI Mode seven. Reddit, YouTube, Facebook in 68%+ of AI Mode results with extra links. Strong domain-level correlation between top-10 rankings and AI citations.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.semrush.com/blog/semrush-ai-overviews-study/">Semrush, Garanko — AI Overviews 2025, refreshed</a></td>
+            <td>15 December 2025 (originally March 2025, refreshed)</td>
+            <td>10M+ keywords, January–November 2025; 200k+ keywords for zero-click; 11k domains</td>
+            <td>Overview trigger rate: 6.49% (January), 24.61% (July), 15.69% (November). Informational share of Overview queries: 91.3% in January to 57.1% in October. Commercial 8.15% → 18.57%; transactional 1.98% → 13.94%; navigational 0.84% → 10.33% (October). Computers &amp; electronics 17.92% of keywords with Overviews in November. Same-keyword zero-click rate fell slightly, 33.75% to 31.53%, after an Overview appeared.</td>
+          </tr>
+          <tr>
+            <td><a href="https://sparktoro.com/blog/new-research-ais-are-highly-inconsistent-when-recommending-brands-or-products-marketers-should-take-care-when-tracking-ai-visibility/">SparkToro, Fishkin / O’Donnell — inconsistent recommendations</a></td>
+            <td>Published January 2026; fieldwork November–December 2025</td>
+            <td>600 volunteers, 12 prompts, ChatGPT, Claude, Google AI Overview or AI Mode, 2,961 runs; plus 142 headphone prompts run to 994 responses</td>
+            <td>Identical brand list &lt;1 in 100 times; identical ordered list &lt;1 in 1,000, including in “SaaS Cloud Computing Providers.” Visibility % across many runs is a reasonable metric; AI “ranking position” is not. Headphone leading brands at 55–77% visibility; tighter spaces similar; brand-design agencies in the 30–40% band. City of Hope in 69 of 71 ChatGPT answers (97%) in a West Coast cancer-care example.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.seerinteractive.com/insights/aio-impact-on-google-ctr-2026-update">Seer Interactive — AIO CTR, 2026 update</a></td>
+            <td>24 April 2026</td>
+            <td>53 brands, 5.47M queries, 2.43B organic impressions, January 2025–February 2026</td>
+            <td>Organic CTR on Overview-present queries from a 1.3% floor in December 2025 to 2.4% in February 2026. Being cited: +120% organic clicks per impression vs uncited on the same Overview SERP; still −38% vs no Overview, on informational queries. Per 1M informational impressions: no AIO ≈ 33,500 clicks; cited ≈ 20,743; uncited ≈ 9,445. Comparison queries trigger an Overview 95% of the time; question-format 86%. A Q4 2025 cited-CTR drop of 61% came with impressions more than doubling and clicks roughly flat.</td>
+          </tr>
+          <tr>
+            <td><a href="https://6sense.com/guides/how-genai-and-llms-are-changing-b2b-buyer-research-and-how-to-respond/">6sense / Hieb — GenAI and B2B buyer research</a>, drawing on the <a href="https://6sense.com/science-of-b2b/buyer-experience-report-2025">2025 Buyer Experience Report</a></td>
+            <td>24 November 2025 (white paper); 2025 report</td>
+            <td>Nearly 4,000 B2B buyers, three-year longitudinal study; median purchase $300k–$400k</td>
+            <td>94% of buyers use an LLM during the purchase. Vendor interactions unchanged: 16 per person with the winning vendor in 2025 (17 in 2024, 16 in 2023). Journey shifted from ~70/30 to ~60/40; first contact at 61% of the journey (from 69%), about 3.5 weeks earlier. LLM use is mainly mid-journey, for comparison and synthesis. 85% had prior experience with the vendors they evaluated. Vendors evaluated 5.1, of which 3.9 already known. Forrester mid-2024 figure of 89% is cited for the prior step-up. HubSpot 2024: 48% of buyers use AI to research software, of whom 98% called it impactful — reported as HubSpot’s figure, via 6sense.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.medianews4u.com/geo-evolves-from-seo-tactics-to-long-term-brand-building-and-consumer-trust-vibin-babuurajan-epic-slope-partners/">MediaNews4U interview, Vibin Babuurajan</a></td>
+            <td>2 November 2026</td>
+            <td>Interview, not a sample</td>
+            <td>GEO “starts by looking like SEO, but eventually… like brand building.” Mental model: SEO = can I rank my page; AI search = does the wider ecosystem consider me a credible answer. Consistency across engines, prompts and independent sources as the quality test. “20 times out of 100 searches.” Four-point list: findability, category content, third-party visibility, presence on Reddit, YouTube, LinkedIn, G2, Capterra. Security-CEO near-miss. Launch in January 2024; first year doing the work themselves. Founding-team background as stated by the interviewer (IBM, Freshworks, Zoho, Sprinklr, CleverTap) and not contradicted. 94% buyer figure, “up from 89% last year.”</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.epicslope.partners/case-studies/composio">Epic Slope, Composio case study</a></td>
+            <td>Published on the firm’s site; engagement December 2025–June 2026</td>
+            <td>One client engagement</td>
+            <td>Tracked AI citations from fewer than 10 to roughly 180 (~18×); 447.1k total AI citations and 240 average cited pages, as published; BOFU theme visibility from under 7% to 24%. Organic clicks 250k → 754k; impressions 12.4M → 55.9M; position 9.2 → 7.2; DR 64 → 74; commercial clicks 1.8k → 3.94k; conversions from organic ~3×.</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.epicslope.partners/case-studies/zepic">Epic Slope, ZEPIC case study</a></td>
+            <td>Citations compared February 2025–March 2026, 12-month engagement</td>
+            <td>One client engagement, Ahrefs Brand Radar</td>
+            <td>42 citations across five platforms: 26 ChatGPT, 10 AI Overviews, 4 Gemini, plus Perplexity and Copilot. DR 20 → 55; organic traffic &gt;10×; 11 keywords in the top 3; traffic value $178 vs &lt;$10; referring domains &gt;6×.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="caption">Further reading we used only for context, and did not take headline numbers from unless listed above: Epic Slope’s <a href="https://www.epicslope.partners/faqs">FAQ</a>, <a href="https://www.epicslope.partners/">homepage</a> and <a href="https://www.epicslope.partners/services/aeo">GEO service page</a>; the YouTube episode “Why Indian Founders Struggle With Brand Marketing,” whose public description names Vibin as an ex-Freshworks growth leader; Vibin’s LinkedIn posts on Freshworks and Turing, and on the co-founders having sat on the client side.</p>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p><strong>Epic Slope Partners</strong></p>
+      <p>A research preview for the Epic Slope blog, written by Subham Paul, 13 November 2026. This page is a private preview: it carries a noindex tag and is not the live article on <a href="https://www.epicslope.partners/">epicslope.partners</a>.</p>
+    </div>
+    <div>
+      <p><a href="#method">Sources and method</a> · <a href="#appendix">Inventory</a> · <a href="https://www.epicslope.partners/contact">Contact Epic Slope</a></p>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  const buttons = document.querySelectorAll('.filters button');
+  const cards = document.querySelectorAll('.engine-card');
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      buttons.forEach(b => b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'));
+      const f = btn.getAttribute('data-filter');
+      cards.forEach(c => {
+        c.hidden = f !== 'all' && c.getAttribute('data-engine') !== f;
+      });
+    });
+  });
+  const links = document.querySelectorAll('.nav-links a, .toc a');
+  const sections = [];
+  document.querySelectorAll('section[id]').forEach(s => sections.push(s));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      const id = en.target.id;
+      document.querySelectorAll('.nav-links a').forEach(a => {
+        if (a.getAttribute('href') === '#' + id) a.setAttribute('aria-current', 'page');
+        else a.removeAttribute('aria-current');
+      });
+    });
+  }, {rootMargin: '-20% 0px -70% 0px', threshold: 0});
+  sections.forEach(s => io.observe(s));
+  const mobile = document.querySelector('.mobile-toc');
+  if (mobile) {
+    mobile.addEventListener('click', () => {
+      const toc = document.getElementById('intro-toc');
+      if (toc) toc.scrollIntoView({behavior:'smooth'});
+    });
+  }
+})();
+</script>
+</body>
+</html>
